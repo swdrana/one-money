@@ -62,7 +62,15 @@ export default function TabTwoScreen() {
   return (
     <SafeAreaView style={styles.container}>
       {/* <NavigationContainer> */}
-      <Tab.Navigator>
+      <Tab.Navigator
+         screenOptions={{
+          tabBarActiveTintColor: '#e91e63',
+          // tabBarInactiveTintColor:'blue',
+          tabBarLabelStyle: { fontSize: 12 },
+          // tabBarItemStyle: { width: 100 },
+          // tabBarStyle: { backgroundColor: 'powderblue' },
+        }}
+      >
         <Tab.Screen name="লেনদেন" component={T2} />
         <Tab.Screen name="TH" component={THistory} />
       </Tab.Navigator>
